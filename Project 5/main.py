@@ -1,25 +1,12 @@
 from playwright.sync_api import sync_playwright
 from playwright_stealth import stealth_sync
 import pandas as pd
+import time
 
 job_data = []
+v = 0
 
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False)
-    context = browser.new_context(viewport={"width": 1280, "height": 800})
-    page = context.new_page()
-    stealth_sync(page)
-
-    # Set headers to appear as a real browser
-    page.set_extra_http_headers({
-        "Accept-Language": "en-US,en;q=0.9",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    })
-
-    # Load Indeed jobs page
-    page.goto("https://in.indeed.com/jobs?q=python+developer&l=Banglore%2C+Karnataka", timeout=60000)
-    page.wait_for_selector('//div[@id="mosaic-jobResults"]', timeout=10000)
-
+def get_data():
     # Select all job listing containers
     job_cards = page.query_selector_all('//div[@data-testid="slider_item"]')
     print(f"Total jobs found: {len(job_cards)}")
@@ -53,10 +40,42 @@ with sync_playwright() as p:
                          "URL": job_url
                          })
 
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=False)
+    context = browser.new_context(viewport={"width": 1280, "height": 800})
+    page = context.new_page()
+    stealth_sync(page)
+
+    # Set headers to appear as a real browser
+    page.set_extra_http_headers({
+        "Accept-Language": "en-US,en;q=0.9",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    })
+
+    # Load Indeed jobs page
+    page.goto("https://in.indeed.com/jobs?q=python+developer&l=Banglore%2C+Karnataka&radius=25", timeout=60000)
+    #page.wait_for_selector('//div[@id="mosaic-jobResults"]', timeout=10000)
+    page.wait_for_selector('//div[@class="jobsearch-LeftPane css-1m1zdkx eu4oa1w0"]', timeout=10000)
+
+    for i in range(1, 10):
+        v += 10
+        print(f"Getting data from page {i}")
+        page.mouse.wheel(0, 1000)
+        time.sleep(2)
+
+        get_data()
+
+        new_url = f"https://in.indeed.com/jobs?q=python+developer&l=Banglore%2C+Karnataka&radius=25&start={v}"
+        page.goto(new_url, timeout=60000)
+        stealth_sync(page)
+        time.sleep(5)
+
+        page.wait_for_selector('//div[@class="jobsearch-LeftPane css-1m1zdkx eu4oa1w0"]', timeout=10000)
+        
     context.close()
     browser.close()
 
-df = pd.DataFrame(job_data)
-df.to_csv("job_data0.csv", index=False)
+df = pd.DataFrame(job_data).drop_duplicates()
+df.to_csv("job_data2.csv", index=False)
 
 print(f"CSV saved successfully")
