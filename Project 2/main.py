@@ -39,8 +39,9 @@ with sync_playwright() as p:
         price = price_l.inner_text().strip() if price_l else 'N/A'
 
         #URL
-        #url_l = item.query_selector()
-        #url = url_l.inner_text().strip() if url_l else 'N/A'
+        url_l = item.query_selector('//a[@href]')
+        url = url_l.get_attribute('href') if url_l else "N/A"
+        link = f"bigbasket.com{url}"
 
         #products.append({
         #    "Name": name,
@@ -57,6 +58,7 @@ with sync_playwright() as p:
         print(f"Quantity: {quantity}")
         print(f"Discount: {discount}")
         print(f"Price: {price}")
+        print(f"Link: {link}")
 
     context.close()
     browser.close()
