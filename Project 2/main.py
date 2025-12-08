@@ -3,6 +3,8 @@ from playwright_stealth import stealth_sync
 import mouse_movement
 import time
 
+products = []
+
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     context = browser.new_context(viewport={"width":1280, "height":800})
@@ -20,11 +22,41 @@ with sync_playwright() as p:
 
     items = page.query_selector_all('//div[@class="SKUDeck___StyledDiv-sc-1e5d9gk-0 eA-dmzP"]') 
     for item in items:
+        #Name
         name_l = item.query_selector('//h3[@class="block m-0 line-clamp-2 font-regular text-base leading-sm text-darkOnyx-800 pt-0.5 h-full"]')
         name = name_l.inner_text().strip() if name_l else 'N/A'
-        print(f"Name: {name}")
+        
+        #Quantity
+        quantity_l = item.query_selector('//span[@class="Label-sc-15v1nk5-0 PackChanger___StyledLabel-sc-newjpv-1 gJxZPQ cWbtUx"]')
+        quantity = quantity_l.inner_text().strip() if quantity_l else 'N/A'
+
+        #Discount
+        discount_l = item.query_selector('//span[@class="font-semibold lg:text-xs xl:text-sm leading-xxl xl:leading-md"]')
+        discount = discount_l.inner_text().strip() if discount_l else 'N/A'
+
+        #Price
+        price_l = item.query_selector('//span[@class="Label-sc-15v1nk5-0 Pricing___StyledLabel-sc-pldi2d-1 gJxZPQ AypOi"]')
+        price = price_l.inner_text().strip() if price_l else 'N/A'
+
+        #URL
+        #url_l = item.query_selector()
+        #url = url_l.inner_text().strip() if url_l else 'N/A'
+
+        #products.append({
+        #    "Name": name,
+        #    "Quantity": quantity,
+        #    "Discount": discount,
+        #    "Price": price,
+        #    "Link": url
+        #})
+        
         mouse_movement.human_click(page, item)
         time.sleep(5)
+
+        print(f"Name: {name}")
+        print(f"Quantity: {quantity}")
+        print(f"Discount: {discount}")
+        print(f"Price: {price}")
 
     context.close()
     browser.close()

@@ -51,9 +51,18 @@ with sync_playwright() as p:
             n += 1
             get_data()
             next_button = page.query_selector('//button[@class="Control__control__ijHLR Pagination__pageItem__NsQSw Pagination__symbol__KHv6r"]')
-            next_button.click()
+            # Ask user what to do next
+            user_input = input("➡️  Click 'Next' in the browser manually, then press Enter to continue (or type 'stop' to end): ")
 
-            if n>5:
+            if user_input.strip().lower() == "stop":
+                print(f"Stopping scrape for {country}.")
+                break
+
+            # Wait for the new page data to load after your manual click
+            try:
+                page.wait_for_selector('//a[@class="flex flex-col gap-2 rounded border border-gray-100 p-2 hover:border-teal-300 hover:shadow-lg hover:shadow-teal-600/40"]', timeout=10000)
+            except:
+                print("⚠️  Timed out waiting for new page, assuming no more pages.")
                 break
 
     context.close()
