@@ -2,18 +2,18 @@ Name,Quantity,Discount,Price,Link
 Coriander Leaves,1 kg,24% OFF,₹210.52,bigbasket.com/pd/10000326/fresho-coriander-leaves-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=1&t_s=Coriander+Leaves
 Potato,N/A,36% OFF,₹27,bigbasket.com/pd/40048457/fresho-potato-new-crop-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=2&t_s=Potato
 Onion,2 kg,39% OFF,₹56,bigbasket.com/pd/10000149/fresho-onion-2-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=3&t_s=Onion
-Local Tomato,250 g,24% OFF,₹17.48,bigbasket.com/pd/40312601/fresho-tomato-local-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=4&t_s=Local+Tomato
-Carrot - Orange,1 kg,42% OFF,₹82,bigbasket.com/pd/10000070/fresho-carrot-orange-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=5&t_s=Carrot+-+Orange
-Yelakki Banana,250 g,42% OFF,₹21,bigbasket.com/pd/40324709/fresho-banana-yelakki-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=6&t_s=Yelakki+Banana
-Ladies’ Fingers,250 g,52% OFF,₹20.5,bigbasket.com/pd/10000143/fresho-ladies-finger-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=7&t_s=Ladies%25E2%2580%2599+Fingers
+Local Tomato,250 g,24% OFF,₹17.48,bigbasket.com/pd/40312601/fresho-tomato-local-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=4&t_s=Local%2520Tomato
+Carrot - Orange,1 kg,42% OFF,₹82,bigbasket.com/pd/10000070/fresho-carrot-orange-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=5&t_s=Carrot%2520-%2520Orange
+Yelakki Banana,250 g,42% OFF,₹21,bigbasket.com/pd/40324709/fresho-banana-yelakki-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=6&t_s=Yelakki%2520Banana
+Ladies’ Fingers,250 g,52% OFF,₹20.5,bigbasket.com/pd/10000143/fresho-ladies-finger-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=7&t_s=Ladies%25E2%2580%2599%2520Fingers
 Cucumber,500 g,59% OFF,₹17,bigbasket.com/pd/10000103/fresho-cucumber-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=8&t_s=Cucumber
-Tomato - Hybrid,500 g,24% OFF,₹29.64,bigbasket.com/pd/10000201/fresho-tomato-hybrid-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=9&t_s=Tomato+-+Hybrid
+Tomato - Hybrid,500 g,24% OFF,₹29.64,bigbasket.com/pd/10000201/fresho-tomato-hybrid-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=9&t_s=Tomato%2520-%2520Hybrid
 Lemon,1 kg,20% OFF,₹55.2,bigbasket.com/pd/10000335/fresho-lemon-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=10&t_s=Lemon
 Capsicum - Green,500 g,24% OFF,₹36.48,bigbasket.com/pd/10000069/fresho-capsicum-green-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=11&t_s=Capsicum%2520-%2520Green
 Cauliflower,N/A,20% OFF,₹37.6,bigbasket.com/pd/10000074/fresho-cauliflower-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=12&t_s=Cauliflower
 Onion - Organically Grown,N/A,30% OFF,₹32,bigbasket.com/pd/40023472/fresho-onion-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=13&t_s=Onion%2520-%2520Organically%2520Grown
 "Palak - Cleaned, without roots",500 g,60% OFF,₹10,bigbasket.com/pd/10000188/fresho-palak-cleaned-without-roots-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=14&t_s=Palak%2520-%2520Cleaned%252C%2520without%2520roots
-Beans - Haricot,500 g,60% OFF,₹29.12,bigbasket.com/pd/40089742/fresho-beans-haricot-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=15&t_s=Beans%2520-%2520Haricot
+Beans - Haricot,500 g,59% OFF,₹29.18,bigbasket.com/pd/40089742/fresho-beans-haricot-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=15&t_s=Beans%2520-%2520Haricot
 Nagpur Orange - Regular,500 g,24% OFF,₹27.36,bigbasket.com/pd/10000267/fresho-orange-nagpur-regular-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=16&t_s=Nagpur%2520Orange%2520-%2520Regular
 Curry Leaves,1 kg,24% OFF,₹124.64,bigbasket.com/pd/10000327/fresho-curry-leaves-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=17&t_s=Curry%2520Leaves
 Pomegranate - Regular,1 kg - (5-6 pcs per kg),20% OFF,₹224.8,bigbasket.com/pd/40120006/fresho-pomegranate-small-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=18&t_s=Pomegranate%2520-%2520Regular
@@ -47,3 +47,147 @@ Coconut - Medium,N/A,24% OFF,₹57.76,bigbasket.com/pd/10000093/fresho-coconut-m
 Brinjal - Bottle Shape,500 g,24% OFF,₹25.08,bigbasket.com/pd/10000054/fresho-brinjal-bottle-shape-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=46&t_s=Brinjal%2520-%2520Bottle%2520Shape
 Premium Tender Coconut,N/A,23% OFF,₹60.5,bigbasket.com/pd/40272798/fresho-tender-coconut-premium-king-coconut-1-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=47&t_s=Premium%2520Tender%2520Coconut
 Cut Roses,500 g,24% OFF,₹231.04,bigbasket.com/pd/40054181/fresho-cut-roses-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=48&t_s=Cut%2520Roses
+Radish - White,500 g,57% OFF,₹10,bigbasket.com/pd/10000166/fresho-radish-white-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=1&t_s=Radish+-+White
+"Banana - Robusta, Small",N/A,30% OFF,₹29.5,bigbasket.com/pd/40179391/fresho-baby-banana-robusta-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=2&t_s=Banana+-+Robusta%252C+Small
+Marigold Flower - Yellow,500 g,24% OFF,₹89.68,bigbasket.com/pd/20001032/fresho-marigold-flower-yellow-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=3&t_s=Marigold+Flower+-+Yellow
+Marigold Flower - Orange,500 g,24% OFF,₹91.96,bigbasket.com/pd/20001034/fresho-marigold-flower-orange-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=4&t_s=Marigold%2520Flower%2520-%2520Orange
+Beetroot - Organically Grown,500 g,24% OFF,₹23.95,bigbasket.com/pd/40022635/fresho-beetroot-organically-grown-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=5&t_s=Beetroot%2520-%2520Organically%2520Grown
+Cabbage,N/A,20% OFF,₹25.6,bigbasket.com/pd/10000066/fresho-cabbage-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=6&t_s=Cabbage
+Mini Orange Imported,500 g,24% OFF,₹190.95,bigbasket.com/pd/20003956/fresho-baby-orange-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=7&t_s=Mini%2520Orange%2520Imported
+Coccinia,1 kg,24% OFF,₹62.32,bigbasket.com/pd/10000089/fresho-coccinia-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=8&t_s=Coccinia
+Sweet Potato,500 g,36% OFF,₹24.5,bigbasket.com/pd/10000194/fresho-sweet-potato-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=9&t_s=Sweet%2520Potato
+"Kiwi - Green, Imported",2 pcs,48% OFF,₹59,bigbasket.com/pd/40350297/fresho-kiwi-green-imported-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=10&t_s=Kiwi%2520-%2520Green%252C%2520Imported
+Amla,1 kg,24% OFF,₹134.52,bigbasket.com/pd/10000332/fresho-amla-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=11&t_s=Amla
+Thai Guava - Pink Centre,N/A,20% OFF,₹49.6,bigbasket.com/pd/40123767/fresho-guava-pink-1-pc-approx-300-400-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=12&t_s=Thai%2520Guava%2520-%2520Pink%2520Centre
+Tender Coconut - Small,N/A,22% OFF,₹67.5,bigbasket.com/pd/40073760/fresho-tender-coconut-small-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=13&t_s=Tender%2520Coconut%2520-%2520Small
+Parwal,500 g,27% OFF,₹40,bigbasket.com/pd/10000366/fresho-parwal-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=14&t_s=Parwal
+Garlic - Peeled,200 g,N/A,₹117,bigbasket.com/pd/30005201/fresho-garlic-peeled-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=15&t_s=Garlic%2520-%2520Peeled
+Palak - Organically Grown,250 g,N/A,₹34.45,bigbasket.com/pd/40050066/fresho-palak-organically-grown-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=16&t_s=Palak%2520-%2520Organically%2520Grown
+"Tomato - Local, Organically Grown",1 kg,29% OFF,₹60,bigbasket.com/pd/40130385/fresho-tomato-local-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=17&t_s=Tomato%2520-%2520Local%252C%2520Organically%2520Grown
+Beans - Cowpea,500 g,24% OFF,₹41.04,bigbasket.com/pd/10000275/fresho-beans-cowpea-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=18&t_s=Beans%2520-%2520Cowpea
+"Tomato - Hybrid, Organically Grown",1 kg,34% OFF,₹67,bigbasket.com/pd/50000557/fresho-tomato-hybrid-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=19&t_s=Tomato%2520-%2520Hybrid%252C%2520Organically%2520Grown
+Coloured Capsicum Mix,N/A,20% OFF,₹56.8,bigbasket.com/pd/40287310/fresho-coloured-capsicum-mix-350-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=20&t_s=Coloured%2520Capsicum%2520Mix
+Watermelon - Small,N/A,20% OFF,₹101.6,bigbasket.com/pd/10000207/fresho-watermelon-small-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=21&t_s=Watermelon%2520%2520-%2520Small
+Spring Onion - With roots,N/A,20% OFF,₹16.8,bigbasket.com/pd/20000981/fresho-spring-onion-with-roots-100-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=22&t_s=Spring%2520Onion%2520-%2520With%2520roots
+Banana - Raw Green,500 g,24% OFF,₹17.48,bigbasket.com/pd/10000168/fresho-banana-raw-green-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=23&t_s=Banana%2520-%2520Raw%2520Green
+Pumpkin Green - Cut,500 g,20% OFF,₹39.2,bigbasket.com/pd/40050087/fresho-pumpkin-green-cut-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=24&t_s=Pumpkin%2520Green%2520-%2520Cut
+Beans - Organically Grown,1 kg,20% OFF,₹119.2,bigbasket.com/pd/50000463/fresho-beans-french-ring-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=25&t_s=Beans%2520-%2520Organically%2520Grown
+Apple - Pink Lady,2 pcs - (Approx. 260 g - 300 g),24% OFF,₹157.32,bigbasket.com/pd/40319251/fresho-apple-pink-lady-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=26&t_s=Apple%2520-%2520Pink%2520Lady
+Chrysanthemum/Shevanti Flower,500 g,24% OFF,₹105.64,bigbasket.com/pd/20001036/fresho-chrysanthemumshevanti-flower-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=27&t_s=Chrysanthemum%252FShevanti%2520Flower
+"Pear - Green, Imported",2 pcs - (Approx. 280 g - 320 g),32% OFF,₹84,bigbasket.com/pd/40048444/fresho-pear-green-imported-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=28&t_s=Pear%2520-%2520Green%252C%2520Imported
+Cucumber - Organically Grown,1 kg,35% OFF,₹53.5,bigbasket.com/pd/50000491/fresho-cucumber-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=29&t_s=Cucumber%2520-%2520Organically%2520Grown
+Bitter Gourd,1 kg,24% OFF,₹89.68,bigbasket.com/pd/10000048/fresho-bitter-gourd-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=30&t_s=Bitter%2520Gourd
+Cabbage - Organically Grown,N/A,20% OFF,₹36.8,bigbasket.com/pd/40023473/fresho-cabbage-organically-grown-1-pc-approx-300-13-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=31&t_s=Cabbage%2520-%2520Organically%2520Grown
+"Banana - Yelakki, Organically Grown",1 kg,42% OFF,₹103.5,bigbasket.com/pd/50000457/fresho-banana-yelakki-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=32&t_s=Banana%2520-%2520Yelakki%252C%2520Organically%2520Grown
+Colocasia,1 kg,24% OFF,₹111.72,bigbasket.com/pd/10000094/fresho-colocasia-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=33&t_s=Colocasia
+Coconut Small - With Husk,N/A,26% OFF,₹37.5,bigbasket.com/pd/30001462/fresho-coconut-for-kalash-with-jatta-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=34&t_s=Coconut%2520Small%2520-%2520With%2520Husk
+Guava,500 g,24% OFF,₹33.44,bigbasket.com/pd/10000370/fresho-guava-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=35&t_s=Guava
+Dragon Fruit,N/A,24% OFF,₹84,bigbasket.com/pd/40008982/fresho-dragon-fruit-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=36&t_s=Dragon%2520Fruit
+Chilli - Green Small,N/A,12% OFF,₹11.44,bigbasket.com/pd/40346927/fresho-chilli-green-small-100-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=37&t_s=Chilli%2520-%2520Green%2520Small
+Chow Chow,1 kg,24% OFF,₹57.76,bigbasket.com/pd/10000086/fresho-chow-chow-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=38&t_s=Chow%2520Chow
+Sweet Potato - Organically Grown,1 kg,24% OFF,₹73.72,bigbasket.com/pd/50000556/fresho-sweet-potato-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=39&t_s=Sweet%2520Potato%2520-%2520Organically%2520Grown
+Coconut - Organically Grown,N/A,25% OFF,₹47,bigbasket.com/pd/40023478/fresho-coconut-organically-grown-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=40&t_s=Coconut%2520-%2520Organically%2520Grown
+Baby Potato,500 g,24% OFF,₹15.2,bigbasket.com/pd/10000024/fresho-baby-potato-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=41&t_s=Baby%2520Potato
+Broad Beans,1 kg,24% OFF,₹142.12,bigbasket.com/pd/10000036/fresho-beans-broad-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=42&t_s=Broad%2520Beans
+Banana - Nendran,500 g,38% OFF,₹32.5,bigbasket.com/pd/10000345/fresho-banana-nendran-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=43&t_s=Banana%2520-%2520Nendran
+"Apple - Red Delicious, Economy",N/A,20% OFF,₹171.2,bigbasket.com/pd/40075384/fresho-apple-red-delicious-economy-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=44&t_s=Apple%2520-%2520Red%2520Delicious%252C%2520Economy
+Coconut - Large,N/A,20% OFF,₹58.4,bigbasket.com/pd/10000092/fresho-coconut-large-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=45&t_s=Coconut%2520-%2520Large
+Onion - Sambhar,1 kg,24% OFF,₹119.32,bigbasket.com/pd/10000331/fresho-onion-sambhar-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=46&t_s=Onion%2520-%2520Sambhar
+Sweet Corn,N/A,20% OFF,₹48.8,bigbasket.com/pd/40004992/fresho-sweet-corn-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=47&t_s=Sweet%2520Corn
+Mosambi - Economy,N/A,20% OFF,₹76.8,bigbasket.com/pd/40203347/fresho-mosambi-economy-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=48&t_s=Mosambi%2520-%2520Economy
+Pineapple,N/A,24% OFF,₹59.28,bigbasket.com/pd/10000156/fresho-pineapple-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=1&t_s=Pineapple
+"Orange - Nagpur, Small",N/A,20% OFF,₹96,bigbasket.com/pd/40164406/fresho-baby-orange-nagpur-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=2&t_s=Orange+-+Nagpur%252C+Small
+"Capsicum - Green, Organically Grown",250 g,24% OFF,₹22.04,bigbasket.com/pd/50000478/fresho-capsicum-green-organically-grown-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=3&t_s=Capsicum+-+Green%252C+Organically+Grown
+Premium Bhindi,1 kg,N/A,₹35,bigbasket.com/pd/40002960/fresho-mysore-bhindi-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=4&t_s=Premium%2520Bhindi
+Custard Apple,500 g,24% OFF,₹41.04,bigbasket.com/pd/10000349/fresho-custard-apple-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=5&t_s=Custard%2520Apple
+Mint - Organically Grown,N/A,20% OFF,₹11.2,bigbasket.com/pd/50000531/fresho-mint-organically-grown-100-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=6&t_s=Mint%2520-%2520Organically%2520Grown
+Banana - Poovan,500 g,24% OFF,₹35.72,bigbasket.com/pd/60000054/fresho-banana-poovan-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=7&t_s=Banana%2520-%2520Poovan
+"Apple - Royal Gala, Regular",N/A,20% OFF,₹204.8,bigbasket.com/pd/40033823/fresho-apple-royal-gala-regular-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=8&t_s=Apple%2520-%2520Royal%2520Gala%252C%2520Regular
+Pumpkin - Organically Grown,N/A,12% OFF,₹87.12,bigbasket.com/pd/40023471/fresho-pumpkin-organically-grown-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=9&t_s=Pumpkin%2520-%2520Organically%2520Grown
+Apple - Royal Gala Economy,4 pcs - Approx.400 g - 500 g,28% OFF,₹167,bigbasket.com/pd/10000005/fresho-apple-royal-gala-economy-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=10&t_s=Apple%2520-%2520Royal%2520Gala%2520Economy
+Pomegranate,N/A,22% OFF,₹250,bigbasket.com/pd/10000269/fresho-pomegranate-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=11&t_s=Pomegranate
+Betel Leaf,10 pcs,24% OFF,₹9.12,bigbasket.com/pd/20001348/fresho-betel-leaf-10-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=12&t_s=Betel%2520Leaf
+Purple Brinjal - Long,250 g,20% OFF,₹11.2,bigbasket.com/pd/20001178/fresho-brinjal-purple-long-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=13&t_s=Purple%2520Brinjal%2520-%2520Long
+Snake Gourd,1 kg,24% OFF,₹39.52,bigbasket.com/pd/10000184/fresho-snake-gourd-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=14&t_s=Snake%2520Gourd
+Mini Orange,N/A,27% OFF,₹93,bigbasket.com/pd/40008987/fresho-orange-mini-3-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=15&t_s=Mini%2520Orange
+Drumstick Leaves,N/A,12% OFF,₹33.44,bigbasket.com/pd/30006607/fresho-drumstick-leaves-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=16&t_s=Drumstick%2520Leaves
+"Apple - Organically Grown, Red",N/A,52% OFF,₹119,bigbasket.com/pd/40093037/fresho-apple-red-delicious-organically-grown-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=17&t_s=Apple%2520-%2520Organically%2520Grown%252C%2520Red
+Green Brinjal,250 g,24% OFF,₹14.44,bigbasket.com/pd/10000057/fresho-brinjal-green-long-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=18&t_s=Green%2520Brinjal
+Pumpkin - Disco,N/A,20% OFF,₹60.8,bigbasket.com/pd/40202912/fresho-pumpkin-disco-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=19&t_s=Pumpkin%2520-%2520Disco
+"Papaya - Raw, Organically Grown",N/A,20% OFF,₹37.6,bigbasket.com/pd/40047629/fresho-papaya-raw-organically-grown-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=20&t_s=Papaya%2520-%2520Raw%252C%2520Organically%2520Grown
+Baby Corn - Peeled,1 kg,24% OFF,₹318.44,bigbasket.com/pd/10000322/fresho-baby-corn-peeled-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=21&t_s=Baby%2520Corn%2520-%2520Peeled
+Muscat Grapes,N/A,47% OFF,₹100,bigbasket.com/pd/40354085/fresho-muscat-grapes-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=22&t_s=Muscat%2520Grapes
+Muskmelon - Netted Medium,1 pc - 1.2 - 2 kg,24% OFF,₹60.04,bigbasket.com/pd/40114323/fresho-muskmelon-netted-medium-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=23&t_s=Muskmelon%2520-%2520%2520Netted%2520Medium
+Nagpur Orange - Premium,N/A,20% OFF,₹156.8,bigbasket.com/pd/40232958/fresho-orange-nagpur-premium-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=24&t_s=Nagpur%2520Orange%2520-%2520Premium
+Lettuce - Iceberg,N/A,20% OFF,₹41.6,bigbasket.com/pd/10000133/fresho-lettuce-iceberg-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=25&t_s=Lettuce%2520-%2520Iceberg
+Sapota,1 kg,24% OFF,₹67.64,bigbasket.com/pd/10000180/fresho-sapota-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=26&t_s=Sapota
+"Capsicum - Red, Organically Grown",N/A,20% OFF,₹46.4,bigbasket.com/pd/40124625/fresho-capsicum-red-organically-grown-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=27&t_s=Capsicum%2520-%2520Red%252C%2520Organically%2520Grown
+Grapes - Bangalore Blue,1 kg,24% OFF,₹89.68,bigbasket.com/pd/20001009/fresho-grapes-bangalore-blue-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=28&t_s=Grapes%2520-%2520Bangalore%2520Blue
+Lotus Flower,N/A,12% OFF,₹95.92,bigbasket.com/pd/40232194/fresho-lotus-flower-to-decorate-for-festivals-puja-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=29&t_s=Lotus%2520Flower
+Cucumber - Mangalore,N/A,12% OFF,₹38.72,bigbasket.com/pd/40224096/fresho-cucumber-mangalore-1-pc-approx-500-1000-gm/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=30&t_s=Cucumber%2520-%2520Mangalore
+Avocado Imported - Small,N/A,53% OFF,₹65,bigbasket.com/pd/40132831/fresho-avocado-imported-small-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=31&t_s=Avocado%2520Imported%2520-%2520Small
+Potato Carisma - Lower Glycemic Index,N/A,24% OFF,₹50.16,bigbasket.com/pd/40231072/fresho-potato-carisma-lower-glycemic-index-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=32&t_s=Potato%2520Carisma%2520-%2520Lower%2520Glycemic%2520Index
+Banana - Karpooravalli,1 kg,24% OFF,₹69.92,bigbasket.com/pd/60000058/fresho-banana-karpooravalli-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=33&t_s=Banana%2520-%2520Karpooravalli
+Chrysanthemum/Shevathi Flowers - White,250 g,24% OFF,₹25.08,bigbasket.com/pd/40240450/fresho-chrysanthemumshevathi-flowers-white-fresh-fragrant-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=34&t_s=Chrysanthemum%252FShevathi%2520Flowers%2520-%2520White
+Beans - Cluster,500 g,24% OFF,₹37.24,bigbasket.com/pd/10000041/fresho-beans-cluster-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=35&t_s=Beans%2520-%2520Cluster
+Green Cleaned Amaranthus - Without roots,500 g,24% OFF,₹66.12,bigbasket.com/pd/10000002/fresho-amaranthus-green-cleaned-without-roots-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=36&t_s=Green%2520Cleaned%2520Amaranthus%2520-%2520Without%2520roots
+Bottle Gourd - Organically Grown,N/A,N/A,₹34.45,bigbasket.com/pd/50000468/fresho-bottle-gourd-organically-grown-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=37&t_s=Bottle%2520Gourd%2520-%2520Organically%2520Grown
+Pomegranate - Peeled,200 g,20% OFF,₹129.6,bigbasket.com/pd/40005823/fresho-pomegranate-peeled-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=38&t_s=Pomegranate%2520-%2520Peeled
+Crimson Grapes - Seedless,250 g,32% OFF,₹162,bigbasket.com/pd/40354086/fresho-crimson-grapes-seedless-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=39&t_s=Crimson%2520Grapes%2520-%2520Seedless
+Red Flesh Dragon Fruit,N/A,12% OFF,₹91.52,bigbasket.com/pd/40113536/fresho-dragon-fruit-red-flesh-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=40&t_s=Red%2520Flesh%2520Dragon%2520Fruit
+Watermelon - Medium,N/A,20% OFF,₹151.2,bigbasket.com/pd/40103540/fresho-watermelon-medium-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=41&t_s=Watermelon%2520-%2520%2520Medium
+Dill Leaves,1 kg,N/A,₹132,bigbasket.com/pd/10000328/fresho-dill-leaves-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=42&t_s=Dill%2520Leaves
+"Banana - Nendran, Organically Grown",1 kg,20% OFF,₹100,bigbasket.com/pd/40229396/fresho-banana-nendran-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=43&t_s=Banana%2520-%2520Nendran%252C%2520Organically%2520Grown
+Ash Gourd,N/A,12% OFF,₹132.88,bigbasket.com/pd/40004004/fresho-ash-gourd-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=44&t_s=Ash%2520Gourd
+Zucchini - Green,1 pc,24% OFF,₹38.52,bigbasket.com/pd/40211815/fresho-zucchini-green-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=45&t_s=Zucchini%2520-%2520Green
+Banana Leaf,N/A,12% OFF,₹28.16,bigbasket.com/pd/20003403/fresho-banana-leaf-5-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=46&t_s=Banana%2520Leaf
+Green Chilli - Small,1 kg,20% OFF,₹91.2,bigbasket.com/pd/20003764/fresho-chilli-green-short-hot-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=47&t_s=Green%2520Chilli%2520-%2520Small
+Basale Leaf,N/A,24% OFF,₹20.52,bigbasket.com/pd/20000756/fresho-basale-leaf-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=48&t_s=Basale%2520Leaf
+Shimla Apple,N/A,20% OFF,₹39.2,bigbasket.com/pd/40122822/fresho-apple-shimla-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=1&t_s=Shimla+Apple
+Thai Guava - White Centre,N/A,24% OFF,₹63.08,bigbasket.com/pd/30002322/fresho-guava-thai-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=2&t_s=Thai+Guava+-+White+Centre
+Tomato - Cherry,N/A,24% OFF,₹28.12,bigbasket.com/pd/10000198/fresho-tomato-cherry-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=3&t_s=Tomato+-+Cherry
+Ooty Potato - Medium,N/A,12% OFF,₹119.68,bigbasket.com/pd/40021628/fresho-ooty-potato-medium-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=4&t_s=Ooty%2520Potato%2520-%2520Medium
+Fresh Turmeric,1 kg,24% OFF,₹139.08,bigbasket.com/pd/40004372/fresho-turmeric-fresh-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=5&t_s=Fresh%2520Turmeric
+Forest Bitter Gourd,1 kg,12% OFF,₹109.12,bigbasket.com/pd/20003767/fresho-bitter-gourd-forest-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=6&t_s=Forest%2520Bitter%2520Gourd
+Watermelon - Organically Grown,N/A,20% OFF,₹116.8,bigbasket.com/pd/40023482/fresho-watermelon-organically-grown-1-pc-approx-1-3-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=7&t_s=Watermelon%2520-%2520Organically%2520Grown
+Mushrooms - Oyster,N/A,12% OFF,₹68.64,bigbasket.com/pd/40020768/fresho-mushrooms-oyster-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=8&t_s=Mushrooms%2520-%2520Oyster
+Apple - Organically Grown Small,N/A,55% OFF,₹119,bigbasket.com/pd/40319277/fresho-baby-apple-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=9&t_s=Apple%2520-%2520Organically%2520Grown%2520Small
+"Apple - Red Delicious, Premium",N/A,20% OFF,₹206.4,bigbasket.com/pd/40104709/fresho-apple-red-delicious-premium-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=10&t_s=Apple%2520-%2520Red%2520Delicious%252C%2520Premium
+Pak Choi,250 g,N/A,₹60.27,bigbasket.com/pd/10000157/fresho-pak-choi-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=11&t_s=Pak%2520Choi
+Pear - Beauty,N/A,36% OFF,₹108,bigbasket.com/pd/40174618/fresho-pear-beauty-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=12&t_s=Pear%2520-%2520Beauty
+Broccoli Florets,N/A,20% OFF,₹163.2,bigbasket.com/pd/40016101/fresho-broccoli-florets-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=13&t_s=Broccoli%2520Florets
+Italian Basil,1 kg,N/A,₹250.68,bigbasket.com/pd/10000314/fresho-basil-italian-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=14&t_s=Italian%2520Basil
+Banana - Red,1 kg,45% OFF,₹98,bigbasket.com/pd/10000582/fresho-banana-red-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=15&t_s=Banana%2520-%2520Red
+Sambar Onion - Peeled (Small Onion),N/A,20% OFF,₹32,bigbasket.com/pd/40005819/fresho-sambar-onion-peeled-small-onion-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=16&t_s=Sambar%2520Onion%2520-%2520Peeled%2520%2528Small%2520Onion%2529
+Zespri Kiwi - Sun Gold,3 pcs - Approx. 220 g - 260 g,12% OFF,₹216.48,bigbasket.com/pd/40025342/fresho-zespri-kiwi-sun-gold-3-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=17&t_s=Zespri%2520Kiwi%2520-%2520Sun%2520Gold
+Papaya - Large,N/A,20% OFF,₹148.8,bigbasket.com/pd/40329345/fresho-papaya-large-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=18&t_s=Papaya%2520-%2520Large
+Persimmon /Amarphal,500 g,24% OFF,₹200.64,bigbasket.com/pd/30001529/fresho-persimmon-amarphal-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=19&t_s=Persimmon%2520%252FAmarphal
+Coconut - Diced,N/A,20% OFF,₹63.2,bigbasket.com/pd/40019379/fresho-coconut-diced-150-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=20&t_s=Coconut%2520-%2520Diced
+Orange - Imported,6 pcs - (Approx. 900 g - 1000 g),24% OFF,₹212.8,bigbasket.com/pd/20000910/fresho-orange-imported-6-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=21&t_s=Orange%2520-%2520Imported
+Garlic - Organically Grown,1 kg,N/A,₹316.44,bigbasket.com/pd/40029982/fresho-garlic-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=22&t_s=Garlic%2520-%2520Organically%2520Grown
+Lettuce - Green,1 pc - (Approx. 100 g - 250 g),24% OFF,₹24.32,bigbasket.com/pd/20000923/fresho-lettuce-green-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=23&t_s=Lettuce%2520-%2520Green
+Broccoli,N/A,20% OFF,₹91.2,bigbasket.com/pd/10000063/fresho-broccoli-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=24&t_s=Broccoli
+Cauliflower - Organically Grown,N/A,N/A,₹39.18,bigbasket.com/pd/50000482/fresho-cauliflower-organically-grown-1-pc-approx-300-13-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=25&t_s=Cauliflower%2520-%2520Organically%2520Grown
+Tulsi Leaves,1 kg,N/A,₹175.34,bigbasket.com/pd/30006463/fresho-tulsi-leaves-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=26&t_s=Tulsi%2520Leaves
+Kashmir Apple - Regular,N/A,12% OFF,₹187.44,bigbasket.com/pd/40319284/fresho-apple-kashmir-regular-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=27&t_s=Kashmir%2520Apple%2520-%2520Regular
+Fresh Figs,1 kg,N/A,₹328.77,bigbasket.com/pd/20001006/fresho-fresh-figs-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=28&t_s=Fresh%2520Figs
+Avocado,1 kg,N/A,₹571.23,bigbasket.com/pd/10000312/fresho-avocado-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=29&t_s=Avocado
+Kinnaur Apple - Regular,N/A,20% OFF,₹87.2,bigbasket.com/pd/40033821/fresho-apple-kinnaur-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=30&t_s=Kinnaur%2520Apple%2520-%2520Regular
+Mango Leaves,N/A,12% OFF,₹18.48,bigbasket.com/pd/40232206/fresho-mango-bunches-used-to-decorate-for-festivals-puja-2-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=31&t_s=Mango%2520Leaves
+"Apple - Shimla, Premium",N/A,41% OFF,₹132,bigbasket.com/pd/40113206/fresho-apple-shimla-premium-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=32&t_s=Apple%2520-%2520Shimla%252C%2520Premium
+Bitter Gourd - Organically Grown,1 kg,20% OFF,₹71.2,bigbasket.com/pd/50000467/fresho-bitter-gourd-organically-grown-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=33&t_s=Bitter%2520Gourd%2520-%2520Organically%2520Grown
+Ash Gourd - Cut,500 g,N/A,₹132,bigbasket.com/pd/40050704/fresho-ash-gourd-cut-500-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=34&t_s=Ash%2520Gourd%2520-%2520Cut
+Papaya - Diced,N/A,20% OFF,₹57.6,bigbasket.com/pd/40019380/fresho-papaya-diced-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=35&t_s=Papaya%2520-%2520Diced
+"Capsicum - Yellow, Organically Grown",N/A,N/A,₹43.84,bigbasket.com/pd/40124626/fresho-capsicum-yellow-organically-grown-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=36&t_s=Capsicum%2520-%2520Yellow%252C%2520Organically%2520Grown
+"Apple - Red Delicious, Regular",N/A,20% OFF,₹188,bigbasket.com/pd/40033824/fresho-apple-red-delicious-regular-4-pcs/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=37&t_s=Apple%2520-%2520Red%2520Delicious%252C%2520Regular
+"Avocado - Imported, Large",N/A,20% OFF,₹131.2,bigbasket.com/pd/40132830/fresho-avocado-imported-large-1-pc/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=38&t_s=Avocado%2520-%2520Imported%252C%2520Large
+Raw Mango,250 g,24% OFF,₹25.08,bigbasket.com/pd/40004384/fresho-raw-mango-250-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=39&t_s=Raw%2520Mango
+"Leaf - Betel, with Arracknut, Pan Supari",N/A,12% OFF,₹55.44,bigbasket.com/pd/40017831/fresho-leaf-betel-with-arracknut-pan-supari-10-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=40&t_s=Leaf%2520-%2520Betel%252C%2520with%2520Arracknut%252C%2520Pan%2520Supari
+Pineapple - Sliced,N/A,20% OFF,₹115.2,bigbasket.com/pd/40090775/fresho-pineapple-slices-200-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=41&t_s=Pineapple%2520-%2520Sliced
+Rajnigandha - Loose,N/A,12% OFF,₹51.92,bigbasket.com/pd/40322793/hoovu-fresh-rajnigandha-loose-100-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=42&t_s=Rajnigandha%2520-%2520Loose
+"Apple - Green, Regular",N/A,12% OFF,₹248.16,bigbasket.com/pd/40033817/fresho-apple-green-regular-4-pcs-approx500g-650g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=43&t_s=Apple%2520-%2520Green%252C%2520Regular
+Cleaned Gongura Leaves/Pulicha - Without roots,N/A,20% OFF,₹9.6,bigbasket.com/pd/20000991/fresho-gongura-leavespulicha-cleaned-without-roots-100-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=44&t_s=Cleaned%2520Gongura%2520Leaves%252FPulicha%2520-%2520Without%2520roots
+Double Beans,1 kg,N/A,₹247.95,bigbasket.com/pd/10000664/fresho-beans-double-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=45&t_s=Double%2520Beans
+Beans/Avare,1 kg,N/A,₹172.6,bigbasket.com/pd/20002696/fresho-beans-avare-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=46&t_s=Beans%252FAvare
+Plum - Imported,1 kg,24% OFF,₹301.72,bigbasket.com/pd/10000573/fresho-plum-imported-1-kg/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=47&t_s=Plum%2520-%2520Imported
+Paneer Roses,N/A,12% OFF,₹58.96,bigbasket.com/pd/40322789/hoovu-fresh-paneer-roses-100-g/?nc=cl-prod-list&t_pos_sec=2&t_pos_item=48&t_s=Paneer%2520Roses

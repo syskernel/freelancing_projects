@@ -87,7 +87,7 @@ def human_scroll(page, amount=2000):
     """Scroll slowly like a human reading"""
     total = 0
     while total < amount:
-        step = random.randint(200, 400)
+        step = random.randint(10, 20)
         page.mouse.wheel(0, step)
         total += step
         time.sleep(random.uniform(0.005, 0.02))
