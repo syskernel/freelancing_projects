@@ -41,24 +41,20 @@ with sync_playwright() as p:
         #URL
         url_l = item.query_selector('//a[@href]')
         url = url_l.get_attribute('href') if url_l else "N/A"
-        link = f"bigbasket.com{url}"
+        link = f"bigbasket.com{url}" if url else 'N/A'
 
-        #products.append({
-        #    "Name": name,
-        #    "Quantity": quantity,
-        #    "Discount": discount,
-        #    "Price": price,
-        #    "Link": url
-        #})
+        products.append({
+            "Name": name,
+            "Quantity": quantity,
+            "Discount": discount,
+            "Price": price,
+            "Link": link
+        })
         
         mouse_movement.human_click(page, item)
-        time.sleep(5)
-
-        print(f"Name: {name}")
-        print(f"Quantity: {quantity}")
-        print(f"Discount: {discount}")
-        print(f"Price: {price}")
-        print(f"Link: {link}")
+        time.sleep(2)
 
     context.close()
     browser.close()
+
+print(f"Successfully saved {len(products)} products !")
