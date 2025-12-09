@@ -2,14 +2,29 @@ from playwright.sync_api import sync_playwright
 from playwright_stealth import stealth_sync
 import mouse_movement
 import time
+from datetime import datetime
+import logging
+import pandas as pd
 
 products = []
+
+today = datetime.now().strftime("%d-%m-%y")
+log_filename = f"logs_{today}.log"
+
+logging.basicConfig(
+    filename=log_filename,
+    level=logging.INFO,  # options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
+
+logging.getLogger().addHandler(logging.StreamHandler())
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     context = browser.new_context(viewport={"width":1280, "height":800})
     page = context.new_page()
     stealth_sync(page)
+    logging.info("Script started")
 
     page.set_extra_http_headers({
         "Accept-language": "en=US,en;q=0.9",
@@ -53,8 +68,15 @@ with sync_playwright() as p:
         
         mouse_movement.human_click(page, item)
         time.sleep(2)
-
+ 
+        logging.info(f"details saved for {len(products)} product")
+        
     context.close()
     browser.close()
 
-print(f"Successfully saved {len(products)} products !")
+filename = f"products{today}.csv"
+df = pd.DataFrame(products)
+df.to_csv(filename, index=False)
+
+logging.info(f"CSV saved successfully: {filename}")
+logging.info("Script execution completed")
