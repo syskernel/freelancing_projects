@@ -2,6 +2,7 @@ from playwright.sync_api import sync_playwright
 from playwright_stealth import stealth_sync
 import pandas as pd
 import time
+import mouse_movement
 
 job_data = []
 v = 0
@@ -33,6 +34,9 @@ def get_data():
         job_key = inner_tag.get_attribute('data-jk') if inner_tag else None
         job_url = f"https://in.indeed.com/viewjob?jk={job_key}&from=shareddesktop_copy" if job_key else 'N/A'
 
+        mouse_movement.human_click(page, job)
+        time.sleep(2)
+
         job_data.append({"Title": title,
                          "Company": company,
                          "Location": location,
@@ -56,6 +60,7 @@ with sync_playwright() as p:
     page.goto("https://in.indeed.com/jobs?q=python+developer&l=Banglore%2C+Karnataka&radius=25", timeout=60000)
     #page.wait_for_selector('//div[@id="mosaic-jobResults"]', timeout=10000)
     page.wait_for_selector('//div[@class="jobsearch-LeftPane css-1m1zdkx eu4oa1w0"]', timeout=10000)
+    mouse_movement.human_scroll(page, amount=800)
 
     for i in range(1, 10):
         v += 10
@@ -68,7 +73,8 @@ with sync_playwright() as p:
         new_url = f"https://in.indeed.com/jobs?q=python+developer&l=Banglore%2C+Karnataka&radius=25&start={v}"
         page.goto(new_url, timeout=60000)
         stealth_sync(page)
-        time.sleep(5)
+        mouse_movement.human_scroll(page, amount=800)
+        time.sleep(2)
 
         page.wait_for_selector('//div[@class="jobsearch-LeftPane css-1m1zdkx eu4oa1w0"]', timeout=10000)
         

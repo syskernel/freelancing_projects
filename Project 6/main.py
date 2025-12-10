@@ -71,3 +71,23 @@ with sync_playwright() as p:
 df = pd.DataFrame(datacentres).drop_duplicates()
 df.to_csv("datacentres.csv", index=False)
 print(f"All data saved to datacentres.csv")
+
+import requests
+import json
+
+headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "Accept": "application/json",
+        "Cache-Control": "no-cache",
+        "accept-language": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6"
+}
+
+url = "https://www.datacenters.com/api/v1/locations/countries/12?query=&page=2&sort_by=preloaded_search_locations.recent_visits_count&sort_direction=desc&radius=100"
+resp = requests.get(url, headers=headers)
+
+data = resp.json()
+
+with open("datacentre.json", "w") as f:
+    json.dump(data, f, indent=4)
+    
+print("SAVED JSON Data in datacentre.json")
