@@ -32,9 +32,9 @@ Project 6:
 ---
 
 ## 🧩 Tech Stack
-Language: Python
-Python libraries: Requests, BeautifulSoup, Playwright, Time, Pandas, etc
-Output Format: CSV, JSON, Excel
+- Language: Python
+- Python libraries: Requests, BeautifulSoup, Playwright, Time, Pandas, etc
+- Output Format: CSV, JSON, Excel
 
 ---
 
