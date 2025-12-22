@@ -17,4 +17,4 @@ with sync_playwright as p:
 
     glasses_card = page.query_selector_all()
     print(f"Total glasses found: {len(glasses_card)}")
-    
+     
