@@ -9,27 +9,26 @@ Boodmo is a highly dynamic, JavaScript-driven platform with complex DOM structur
 
 ### 🎯 Objective
 To build a Python automation script that:
-
--Searches car parts based on brand, model, and part category.
--Scrapes structured product details including:
-    *Part name
-    *Brand
-    *Price
-    *MRP
-    *Discount
-    *Availability
--Handles dynamic content loading, pagination, and infinite scroll.
--Stores clean and structured data in Excel / CSV format.
--Logs every execution step with timestamps for monitoring, debugging, and auditing.
--Scales to scrape 1000+ product records reliably.
+* Searches car parts based on brand, model, and part category.
+* Scrapes structured product details including:
+    * Part name
+    * Brand
+    * Price
+    * MRP
+    * Discount
+    * Availability
+* Handles dynamic content loading, pagination, and infinite scroll.
+* Stores clean and structured data in Excel / CSV format.
+* Logs every execution step with timestamps for monitoring, debugging, and auditing.
+* Scales to scrape 1000+ product records reliably.
 
 ---
 
 ### 🧩 Tech Stack
--Python (3.10+)
--NoDriver (Stealth Browser Automation)
--Chromium Browser Engine
--Python Libraries: asyncio, time, pandas, logging, openpyxl
+* Python (3.10+)
+* NoDriver (Stealth Browser Automation)
+* Chromium Browser Engine
+* Python Libraries: asyncio, time, pandas, logging, openpyxl
 
 ---
 
