@@ -20,8 +20,8 @@ Project 1: 🌐 Search Engine URL Fetcher
 Project 2: 🧺 Big Basket product scraper
             This project scrapes details of products(like name, quantity, price, discount, URL) from a specific category of results **Fruits and Vegetables** and save the output in a CSV file from the BigBasket website.
 
-Project 3: 🕶️ sunglasses hut image scraper
-            Fetches images of all the sunglasses from mens collection page and stores the url of each image in a google sheet. Each images format can be changed and easily downloaded.
+Project 3: 🚗 boodmo car parts scraper
+            
 
 Project 4: 🌨️ Weather API Automation
             Fetches weather data from a public API and stores the result in a file. The script automatically sends email of the logged activities as scheduled.
