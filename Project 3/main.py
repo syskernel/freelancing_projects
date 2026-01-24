@@ -1,20 +1,40 @@
-from playwright.sync_api import sync_playwright
-from playwright_stealth import stealth_sync
+import nodriver as uc
+import time
+import pandas as pd
 
-with sync_playwright as p:
-    browser = p.chromium.launch(headless=False)
-    context = browser.new_context(viewport={"width":1280, "height":800})
-    page = context.new_page()
-    stealth_sync(page)
+data = []
 
-    page.set_extra_http_headers({
-        "Accept-language": "en=US,en;q=0.9",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
-    })
+async def main():
 
-    page.goto(,timeout=60000)
-    page.wait_for_selector(,timeout=1000)
+    browser = await uc.start(user_data_dir = "C:/browser_profiles/boodmo", headless=False)
+    page = await browser.get("https://boodmo.com/catalog/5109-brake_drum/m330-nissan/")
 
-    glasses_card = page.query_selector_all()
-    print(f"Total glasses found: {len(glasses_card)}")
-     
+    time.sleep(30)  
+
+    titles = await page.select_all("span.product-item-tile__title")
+    prices = await page.select_all("span.product-item-tile__price__current")
+    mrps = await page.select_all("span.product-item-tile__price__mrp--discount")
+    discounts = await page.select_all("span.product-item-tile__price__discount ng-star-inserted")
+    brands = await page.select_all("span.product-item-tile__desc__brand")
+
+    max_len = max(len(titles), len(prices), len(mrps), len(discounts), len(brands))
+
+    for i in range(max_len):
+        row = {
+            "Title": titles[i].text.strip() if i < len(titles) else None,
+            "Price": prices[i].text.strip() if i < len(prices) else None,
+            "MRP": mrps[i].text.strip() if i < len(mrps) else None,
+            "Discount": discounts[i].text.strip() if i < len(discounts) else None,
+            "Brand": brands[i].text.strip() if i < len(brands) else None,
+        }
+    data.append(row)
+
+    browser.stop()
+
+if __name__ == "__main__":
+    uc.loop().run_until_complete(main())
+
+#pd.DataFrame(data).to_excel("products.xlsx", index=False)
+#print(f"Data saved successfully")
+
+print(data)
