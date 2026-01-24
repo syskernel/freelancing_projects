@@ -21,14 +21,14 @@ Project 2: 🧺 Big Basket product scraper
             This project scrapes details of products(like name, quantity, price, discount, URL) from a specific category of results **Fruits and Vegetables** and save the output in a CSV file from the BigBasket website.
 
 Project 3: 🚗 boodmo car parts scraper
-            
+            Fetches data related to automobile parts from boodmos site and stores the result in an excel file. The unavailable data is accurately removed through "N/A" making the data reliable.
 
 Project 4: 🌨️ Weather API Automation
             Fetches weather data from a public API and stores the result in a file. The script automatically sends email of the logged activities as scheduled.
 
 Project 5: 📫 Indeed job listing scraper
+            This project is an advanced browser automation scraper designed to extract job listings from Indeed’s dynamic and highly protected web platform.
             
-
 Project 6: 📈 Datacentres info scraper 
 
 ---
