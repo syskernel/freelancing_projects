@@ -29,7 +29,7 @@ Project 4: 🌨️ Weather API Automation
 Project 5: 📫 Indeed job listing scraper
             This project is an advanced browser automation scraper designed to extract job listings from Indeed’s dynamic and highly protected web platform.
             
-Project 6: 📈 Datacentres info scraper 
+Project 6: 🐶 Petsmart dog food scraper  
 
 ---
 

@@ -1,1 +1,1 @@
-# PROJECT 6 :📈 Datacentres info scraper
+# PROJECT 6 :🐶 Petsmart dog food scraper
