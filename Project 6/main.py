@@ -18,22 +18,27 @@ with sync_playwright() as p:
 
     flavor_l = page.query_selector_all('//span[@class="variants-fieldset__legend-value"]')[0]
     flavor = flavor_l.inner_text().strip() if flavor_l else 'N/A'
- 
-#   price and size
-    for i in range(1,5):
-        price_l = page.query_selector('//div[@class="product-price"]')
-        price = price_l.inner_text().strip()
-        print(price)
 
-        size_l = page.query_selector_all('//span[@class="variants-fieldset__legend-value"]')[1]
+    size_l = page.query_selector_all('//span[@class="variant-base__label-text"]')
+    for i in range(len(size_l)):
+        size_l = page.query_selector_all('//span[@class="variant-base__label-text"]')[i]
         size = size_l.inner_text().strip() if size_l else 'N/A'
         print(size)
 
-        next_size = page.query_selector_all('//span[@class="variant-base__label-text"]')[i].click()
-        time.sleep(1)
+    see_more = page.locator('//button[@class="sparky-c-button see-more-button sparky-c-button--link"]')
+    see_more.scroll_into_view_if_needed()
+    time.sleep(2)
+    see_more.click()
+    time.sleep(2)
+    
+    ps = page.locator("div").locator("p")
+    ingredients = ps.nth(12).inner_text()
+    nutrients = ps.nth(13).inner_text()
 
     print(brand)
     print(flavor)
+    print(ingredients)
+    print(nutrients)
 
     context.close()
     browser.close()
