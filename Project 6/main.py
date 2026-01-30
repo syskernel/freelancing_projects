@@ -32,9 +32,10 @@ with sync_playwright() as p:
     print(price)
 
     clk = page.query_selector_all('//label[@class="variant-base__label"]')
-    for i in range(len(clk)):
-        clks = page.query_selector_all('//label[@class="variant-base__label"]')[i].click()
+    for sixe_btn in clk:
+        sixe_btn.click()
         time.sleep(2)
+
         size_l = page.query_selector_all('//span[@class="variants-fieldset__legend-value"]')[1]
         size = size_l.inner_text().strip() if size_l else 'N/A'
         print(size)
@@ -53,14 +54,14 @@ with sync_playwright() as p:
     see_more.click()
     time.sleep(5)
     
-    ps = page.locator("div").locator("p")
-    ingredients = ps.nth(12).inner_text()
-    nutrients = ps.nth(13).inner_text()
+    #ps = page.locator("div").locator("p")
+    #ingredients = ps.nth(12).inner_text()
+    #nutrients = ps.nth(13).inner_text()
 
     print(brand)
     print(flavor)
-    print(ingredients)
-    print(nutrients)
+    #print(ingredients)
+    #print(nutrients)
 
     context.close()
     browser.close()
