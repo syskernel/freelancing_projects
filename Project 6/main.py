@@ -48,18 +48,30 @@ with sync_playwright() as p:
         
         print(price)
 
-    see_more = page.locator('//button[@class="sparky-c-button see-more-button sparky-c-button--link"]')
-    see_more.scroll_into_view_if_needed()
-    time.sleep(2)
-    see_more.click()
-    time.sleep(5)
+    ingrd_btns = page.query_selector_all('//a[@class="sparky-c-tabs__link"]')
+    for ingrd_btn in ingrd_btns:
+        text = ingrd_btn.inner_text().strip()
+        if text == "Ingredients":
+            time.sleep(2)
+            ingrd_btn.click()
+            see_more = page.query_selector_all('//span[@class="sparky-c-button__text"]')
+            for all in see_more:
+                inr_txt = all.inner_text().strip()
+                if inr_txt == "See more":
+                    time.sleeo(2)
+                    all.click()
+            
+    #see_more.scroll_into_view_if_needed()
+    #time.sleep(2)
+    #see_more.click()
+    time.sleep(300)
     
     #ps = page.locator("div").locator("p")
     #ingredients = ps.nth(12).inner_text()
     #nutrients = ps.nth(13).inner_text()
 
-    print(brand)
-    print(flavor)
+    #print(brand)
+    #print(flavor)
     #print(ingredients)
     #print(nutrients)
 
