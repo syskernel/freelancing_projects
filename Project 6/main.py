@@ -73,7 +73,6 @@ with sync_playwright() as p:
                         #Using regex i can get ingredients list and guarenteed analysis from here
             else:
                 print("Can't find nutients")
-        time.sleep(300)
 
         print(f"Brand: {brand}")
         print(f"Flavor: {flavor}")
