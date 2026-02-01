@@ -1,0 +1,11 @@
+2026-02-01 10:50:33,559 - INFO - Script started
+2026-02-01 10:50:33,561 - INFO - Saving data of australia
+2026-02-01 10:50:43,148 - INFO - Saving data from Page 1
+2026-02-01 10:50:45,930 - INFO - Saving data from Page 2
+2026-02-01 10:50:50,778 - INFO - Saving data from Page 3
+2026-02-01 10:50:54,617 - INFO - Saving data from Page 4
+2026-02-01 10:50:59,183 - INFO - Saving data from Page 5
+2026-02-01 10:51:02,792 - INFO - Saving data of new-zealand
+2026-02-01 10:51:10,794 - INFO - Saving data from Page 6
+2026-02-01 10:51:12,394 - INFO - CSV saved successfully: datacentre.csv
+2026-02-01 10:51:12,394 - INFO - Script execution completed
