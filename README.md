@@ -32,6 +32,9 @@ Project 5: 📫 Indeed job listing scraper
 Project 6: 🐶 Petsmart dog food scraper 
             A scalable Playwright-based automation pipeline that reads large batches of URLs from Excel, visits each site using real browser behavior, and enriches the same Excel file with structured scraped data. 
 
+Project 7 : 🏢 Datacentre Location Scraper
+             A Playwright-based browser automation scraper that navigates paginated, JavaScript-rendered listings to extract structured data reliably.The project features async-safe pagination logic, state-aware navigation, and logging for stability, traceability, and production readiness.
+
 ---
 
 ## 🧩 Tech Stack
