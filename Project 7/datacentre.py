@@ -6,7 +6,16 @@ datacentre = []
 
 async def next_button(page):
     nxt_btn = await page.query_selector('//button[@data-testid="next-page-button"]')
+    if not nxt_btn:
+        return False
+
+    is_disabled = await nxt_btn.is_disabled()
+    if is_disabled:
+        return False
+
     await nxt_btn.click()
+    await page.wait_for_load_state("networkidle")
+    return True
 
 async def get_data(page):
     items = await page.query_selector_all('//a[@class="flex flex-col gap-2 rounded border border-gray-100 p-2 hover:border-teal-300 hover:shadow-lg hover:shadow-teal-600/40"]')
@@ -39,8 +48,12 @@ async def save_session():
 
         await page.goto("https://www.datacenters.com/locations/australia", timeout=60000)
         await page.wait_for_load_state("networkidle")
-        await page.wait_for_selector('//div[@data-testid="container"]', timeout=10000)
-        await get_data(page)
+        while True:
+            await page.wait_for_selector('//div[@data-testid="container"]', timeout=10000)
+            await get_data(page)
+            has_next = await next_button(page)
+            if not has_next:
+                break
 
         await context.storage_state(path="C:/browser_profiles/session.json")
 
