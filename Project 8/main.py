@@ -25,9 +25,18 @@ async def save_session():
         await page.select_option("#sCriteria", label="School District")
         await page.select_option("#sPickList", label="S01 - Chester-Upland School District")
         await page.click('//button[@id="btAdd"]')
+        time.sleep(1)
         await page.select_option("#sCriteria", label="Square Feet")
-
+        await page.type("#txtCrit", "0", delay=100)
+        await page.type("#txtCrit2", "1000", delay=100)
+        await page.click('//button[@id="btAdd"]')
+        time.sleep(1)
+        await page.click('//button[@id="btSearch"]')
         time.sleep(2)
+
+        search_results = await page.query_selector_all('//tr[@class="SearchResults"]')
+        for result,i in enumerate(search_results):
+            await result[i].click()
 
         await context.storage_state(path="C:/browser_profiles/delaware.json")
 
