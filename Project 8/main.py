@@ -19,9 +19,15 @@ async def save_session():
         await page.goto("http://delcorealestate.co.delaware.pa.us/PT/search/advancedsearch.aspx?mode=advanced", timeout=60000)
         await page.wait_for_load_state("networkidle")
 
-        agree = await page.query_selector('//button[@id="btAgree"]')
-        await agree.click()
-        time.sleep(5)
+        await page.click('//button[@id="btAgree"]')
+        time.sleep(10)
+
+        await page.select_option("#sCriteria", label="School District")
+        await page.select_option("#sPickList", label="S01 - Chester-Upland School District")
+        await page.click('//button[@id="btAdd"]')
+        await page.select_option("#sCriteria", label="Square Feet")
+
+        time.sleep(2)
 
         await context.storage_state(path="C:/browser_profiles/delaware.json")
 
