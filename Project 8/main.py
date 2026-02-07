@@ -3,6 +3,15 @@ from playwright.async_api import async_playwright
 import logging
 import time
 
+async def get_data(page):
+    
+    for i in range(14):
+        heading = page.locator('//td[@class="DataletSideHeading"]').nth(i)
+        data1 = (await heading.inner_text()).strip() if heading else 'N/A'
+        content = page.locator('//td[@class="DataletData"]').nth(i)
+        data2 = (await content.inner_text()).strip() if content else 'N/A'
+        print(f"{data1}: {data2}")
+
 async def save_session():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
@@ -34,9 +43,11 @@ async def save_session():
         await page.click('//button[@id="btSearch"]')
         time.sleep(2)
 
-        search_results = await page.query_selector_all('//tr[@class="SearchResults"]')
-        for result,i in enumerate(search_results):
-            await result[i].click()
+        first = page.locator('//tr[@class="SearchResults"]').nth(1)
+        await first.click()
+
+        time.sleep(60)
+        await get_data(page)
 
         await context.storage_state(path="C:/browser_profiles/delaware.json")
 
