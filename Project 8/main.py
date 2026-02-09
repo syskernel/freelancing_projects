@@ -1,30 +1,34 @@
 import asyncio
 from playwright.async_api import async_playwright
-import logging
 import time
+import pandas as pd
+
+property_data = {}
 
 async def get_data(page):
-    
+    print("Fetching data for 1st listing")
     for i in range(14):
-        heading = page.locator('//td[@class="DataletSideHeading"]').nth(i)
-        data1 = (await heading.inner_text()).strip() if heading else 'N/A'
-        content = page.locator('//td[@class="DataletData"]').nth(i)
-        data2 = (await content.inner_text()).strip() if content else 'N/A'
-        print(f"{data1}: {data2}")
+        heading = page.locator('//td[@class="DataletSideHeading"]')
+        data1 = (await heading.nth(i).inner_text()).strip()
+        time.sleep(2)
+        content = page.locator('//td[@class="DataletData"]')
+        data2 = (await content.nth(i).inner_text()).strip()
+        property_data[data1] = data2
+    print("Data from page 1 saved to list")
 
 async def save_session():
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(viewport={"width":1280, "height":800})
         page = await context.new_page()  
-        logging.info("Script started")  
+        print("Script started")  
 
         await page.set_extra_http_headers({
             "Accept-language": "en=US,en;q=0.9",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
         })    
 
-        logging.info("Going to the site")
+        print("Going to the site")
         await page.goto("http://delcorealestate.co.delaware.pa.us/PT/search/advancedsearch.aspx?mode=advanced", timeout=60000)
         await page.wait_for_load_state("networkidle")
 
@@ -46,7 +50,7 @@ async def save_session():
         first = page.locator('//tr[@class="SearchResults"]').nth(1)
         await first.click()
 
-        time.sleep(60)
+        time.sleep(30)
         await get_data(page)
 
         await context.storage_state(path="C:/browser_profiles/delaware.json")
@@ -55,3 +59,7 @@ async def save_session():
         await browser.close()
 
 asyncio.run(save_session())
+
+df = pd.DataFrame([property_data])
+df.to_csv("property_data.csv", index=False)
+print("CSV saved successfully")
