@@ -1,20 +1,22 @@
 import asyncio
 from playwright.async_api import async_playwright
-import time
 import pandas as pd
 
-property_data = {}
+all_properties = []
 
-async def get_data(page):
-    print("Fetching data for 1st listing")
+async def get_data(page, listing_number):
+    print(f"Fetching data for listing {listing_number}")
+    await page.wait_for_timeout(2000)
+    property_data = {}
+
     for i in range(14):
         heading = page.locator('//td[@class="DataletSideHeading"]')
         data1 = (await heading.nth(i).inner_text()).strip()
-        time.sleep(2)
         content = page.locator('//td[@class="DataletData"]')
         data2 = (await content.nth(i).inner_text()).strip()
         property_data[data1] = data2
-    print("Data from page 1 saved to list")
+    
+    return property_data
 
 async def save_session():
     async with async_playwright() as p:
@@ -33,25 +35,28 @@ async def save_session():
         await page.wait_for_load_state("networkidle")
 
         await page.click('//button[@id="btAgree"]')
-        time.sleep(10)
+        await page.wait_for_timeout(2000)
 
         await page.select_option("#sCriteria", label="School District")
         await page.select_option("#sPickList", label="S01 - Chester-Upland School District")
         await page.click('//button[@id="btAdd"]')
-        time.sleep(1)
+        await page.wait_for_timeout(1000)
         await page.select_option("#sCriteria", label="Square Feet")
         await page.type("#txtCrit", "0", delay=100)
         await page.type("#txtCrit2", "1000", delay=100)
         await page.click('//button[@id="btAdd"]')
-        time.sleep(1)
+        await page.wait_for_timeout(1000)
         await page.click('//button[@id="btSearch"]')
-        time.sleep(2)
+        await page.wait_for_timeout(2000)
 
-        first = page.locator('//tr[@class="SearchResults"]').nth(1)
+        first = page.locator('//tr[@class="SearchResults"]').nth(0)
         await first.click()
+        await page.wait_for_timeout(10000)
 
-        time.sleep(30)
-        await get_data(page)
+        for listing_number in range(10):
+            data = await get_data(page, listing_number)
+            all_properties.append(data)
+            await page.click('//input[@id="DTLNavigator_imageNext"]')
 
         await context.storage_state(path="C:/browser_profiles/delaware.json")
 
@@ -60,6 +65,6 @@ async def save_session():
 
 asyncio.run(save_session())
 
-df = pd.DataFrame([property_data])
+df = pd.DataFrame(all_properties)
 df.to_csv("property_data.csv", index=False)
 print("CSV saved successfully")
