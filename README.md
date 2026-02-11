@@ -35,6 +35,9 @@ Project 6: 🐶 Petsmart dog food scraper
 Project 7 : 🏢 Datacentre Location Scraper
              A Playwright-based browser automation scraper that navigates paginated, JavaScript-rendered listings to extract structured data reliably.The project features async-safe pagination logic, state-aware navigation, and logging for stability, traceability, and production readiness.
 
+Project 8 : 🏠 Delaware Property Scraper
+            It fetches property data from Delaware Pensylvania's official site. It handles pagination and stores data structurally.The script needs to be further improved to handle large sets of data by creating data pipelines.
+
 ---
 
 ## 🧩 Tech Stack
@@ -44,7 +47,7 @@ Project 7 : 🏢 Datacentre Location Scraper
 
 ---
 
-### 🚀 Future Enhancements
+## 🚀 Future Enhancements
 I will continuously refine and enhance these projects as my expertise grows, while expanding the repository with new real-world projects.
 
 ---
