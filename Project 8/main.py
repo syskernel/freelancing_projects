@@ -53,7 +53,7 @@ async def save_session():
         await first.click()
         await page.wait_for_timeout(10000)
 
-        for listing_number in range(10):
+        for listing_number in range(100):
             data = await get_data(page, listing_number)
             all_properties.append(data)
             await page.click('//input[@id="DTLNavigator_imageNext"]')
