@@ -1,5 +1,8 @@
 import asyncio
 from playwright.async_api import async_playwright
+import pandas as pd
+
+tender = []
 
 async def aoc_page(active_page):
     locator = active_page.locator("td.page_title", has_text="AOC Summary")
@@ -11,7 +14,23 @@ async def aoc_page(active_page):
         print("Not on AOC page")
 
 async def fetch_page(active_page):
-    pass
+    locator_l = active_page.locator('//td[@class="td_field"]')
+    tender_id = (await locator_l.nth(1).inner_text()).strip() 
+    title = (await locator_l.nth(3).inner_text()).strip() 
+    date = (await locator_l.nth(4).inner_text()).strip()
+    value = (await locator_l.nth(5).inner_text()).strip() 
+    period = (await locator_l.nth(6).inner_text()).strip()
+    name_l = active_page.locator('//td[@align="left"]')
+    name = (await name_l.nth(7).inner_text()).strip()
+    tender.append({
+        "TENDER ID": tender_id,
+        "NAME OF TENDER": title,
+        "CONTRACT DATE": date,
+        "CONTRACT VALUE": value,
+        "WORK PERIOD(in days)": period,
+        "BIDDER NAME": name
+    })
+    print("successfully added details to file")
 
 async def save_session():
     async with async_playwright() as p:
@@ -44,6 +63,8 @@ async def save_session():
                 if await aoc_page(active_page) == True:
                     print(active_page.url)
                     print("You can Fetch data now")
+            elif command == "fetch":
+                await fetch_page(active_page)
             else:
                 break
         
@@ -51,3 +72,7 @@ async def save_session():
         await browser.close()
 
 asyncio.run(save_session())
+
+df = pd.DataFrame(tender)
+df.to_csv("tender_leads.csv", index=False)
+print("CSV saved Successfully!")
