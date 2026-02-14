@@ -1,7 +1,9 @@
 import asyncio
 from playwright.async_api import async_playwright
 import pandas as pd
+from datetime import datetime
 
+today = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 tender = []
 
 async def aoc_page(active_page):
@@ -15,6 +17,7 @@ async def aoc_page(active_page):
 
 async def fetch_page(active_page):
     locator_l = active_page.locator('//td[@class="td_field"]')
+    organisation = (await locator_l.nth(0).inner_text()).strip()
     tender_id = (await locator_l.nth(1).inner_text()).strip() 
     title = (await locator_l.nth(3).inner_text()).strip() 
     date = (await locator_l.nth(4).inner_text()).strip()
@@ -28,7 +31,8 @@ async def fetch_page(active_page):
         "CONTRACT DATE": date,
         "CONTRACT VALUE": value,
         "WORK PERIOD(in days)": period,
-        "BIDDER NAME": name
+        "BIDDER NAME": name,
+        "ORGANISATION": organisation
     })
     print("successfully added details to file")
 
@@ -73,6 +77,9 @@ async def save_session():
 
 asyncio.run(save_session())
 
+filename = f"tenders{today}.csv"
 df = pd.DataFrame(tender)
-df.to_csv("tender_leads.csv", index=False)
+df = df.drop_duplicates()
+df.to_csv(filename, index=False)
+
 print("CSV saved Successfully!")
