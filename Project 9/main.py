@@ -1,13 +1,13 @@
 import asyncio
 from playwright.async_api import async_playwright
 import pandas as pd
-from datetime import datetime
+import os
 
-today = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 tender = []
 
 async def aoc_page(active_page):
-    locator = active_page.locator("td.page_title", has_text="AOC Summary")
+    #locator = active_page.locator("td.page_title", has_text="AOC Summary")
+    locator = active_page.locator('tr:has(td:text("AOC Summary"))')
     count = await locator.count()
     if count > 0:
         print("Confirmed: AOC page")
@@ -16,23 +16,21 @@ async def aoc_page(active_page):
         print("Not on AOC page")
 
 async def fetch_page(active_page):
-    locator_l = active_page.locator('//td[@class="td_field"]')
-    organisation = (await locator_l.nth(0).inner_text()).strip()
-    tender_id = (await locator_l.nth(1).inner_text()).strip() 
-    title = (await locator_l.nth(3).inner_text()).strip() 
-    date = (await locator_l.nth(4).inner_text()).strip()
-    value = (await locator_l.nth(5).inner_text()).strip() 
-    period = (await locator_l.nth(6).inner_text()).strip()
-    name_l = active_page.locator('//td[@align="left"]')
-    name = (await name_l.nth(7).inner_text()).strip()
+    organisation = (await active_page.locator("//td[text()='Organisation Chain']/following-sibling::td").inner_text()).strip()
+    tender_id = (await active_page.locator("//td[text()='Tender ID : ']/following-sibling::td").inner_text()).strip() 
+    title = (await active_page.locator("//td[text()='Tender Title : ']/following-sibling::td").inner_text()).strip() 
+    date = (await active_page.locator("//td[text()='Contract Date : ']/following-sibling::td/b").inner_text()).strip() 
+    period = (await active_page.locator("//td[text()='Work Completion Period (in days) : ']/following-sibling::td/b").inner_text()).strip()
+    name = (await active_page.locator("//tr[@id='informal']/td[3]").inner_text()).strip()
+    value = (await active_page.locator("//tr[@id='informal']/td[5]").inner_text()).strip()
     tender.append({
         "TENDER ID": tender_id,
         "NAME OF TENDER": title,
         "CONTRACT DATE": date,
         "CONTRACT VALUE": value,
         "WORK PERIOD(in days)": period,
-        "BIDDER NAME": name,
-        "ORGANISATION": organisation
+        "ORGANISATION": organisation,
+        "BIDDER NAME": name
     })
     print("successfully added details to file")
 
@@ -48,7 +46,8 @@ async def save_session():
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
         })    
 
-        await page.goto("https://eprocure.gov.in/eprocure/app", timeout=60000)
+        #await page.goto("https://eprocure.gov.in/eprocure/app", timeout=60000)
+        await page.goto("https://mahatenders.gov.in/nicgep/app", timeout=60000)
         await page.wait_for_load_state("networkidle")
 
         async def handle_new_page(new_page):
@@ -61,14 +60,15 @@ async def save_session():
             lambda new_page: asyncio.create_task(handle_new_page(new_page))
         )
 
+        n = 0
         while True:
+            n += 1
+            print(n)
             command = await asyncio.to_thread(input, "Enter command: ")
-            if command == "page url":
+            if command == "fetch":
                 if await aoc_page(active_page) == True:
                     print(active_page.url)
-                    print("You can Fetch data now")
-            elif command == "fetch":
-                await fetch_page(active_page)
+                    await fetch_page(active_page)
             else:
                 break
         
@@ -77,9 +77,13 @@ async def save_session():
 
 asyncio.run(save_session())
 
-filename = f"tenders{today}.csv"
-df = pd.DataFrame(tender)
-df = df.drop_duplicates()
-df.to_csv(filename, index=False)
+new_df = pd.DataFrame(tender)
+filename = "tenders_master01.xlsx"
+if os.path.exists(filename):
+    old_df = pd.read_excel(filename)
+    combined_df = pd.concat([old_df, new_df]).drop_duplicates()
+    combined_df.to_excel(filename, index=False)
+else:
+    new_df.to_excel(filename, index=False)
 
 print("CSV saved Successfully!")
