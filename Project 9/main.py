@@ -27,7 +27,7 @@ async def fetch_page(active_page):
         "TENDER ID": tender_id,
         "NAME OF TENDER": title,
         "CONTRACT DATE": date,
-        "CONTRACT VALUE": value,
+        "CONTRACT VALUE(in INR)": value,
         "WORK PERIOD(in days)": period,
         "ORGANISATION": organisation,
         "BIDDER NAME": name
